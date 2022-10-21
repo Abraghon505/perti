@@ -20,6 +20,7 @@ export class LoginPage implements OnInit {
     ) { }
 
   ngOnInit() {
+    this.localNotifications.requestPermission();
   }
 
   login(){

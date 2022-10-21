@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class MovieService {  
-  url = "http://api.tvmaze.com/search/shows";
+  url = "https://api.tvmaze.com/search/shows";
 
   constructor( private httpClient: HttpClient ) { }
 
