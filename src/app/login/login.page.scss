@@ -1,0 +1,28 @@
+ion-content {
+    --background: linear-gradient(89.5deg, rgb(104, 208, 232) 1.5%, rgb(231, 144, 245) 100.5%) !important;
+}
+.cardconteudo {
+    background: rgba(255,255,255,0.5);
+}
+
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.col100a{
+    color: #000 !important;
+}
+.col102a{
+    color:#019dc0 !important
+}
+
+ion-input{
+    --background: none !important;
+}
+
+ion-item{
+    --background: none !important;
+}

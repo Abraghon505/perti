@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="ion-text-center">
+    <img [src]="movieInfo.image.medium" class="ion-margin-top" />
+    <ion-card-header>
+      <ion-card-subtitle>{{movieInfo.language}}</ion-card-subtitle>
+      <ion-card-title>{{movieInfo.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{movieInfo.summary}}
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row>
+    <ion-col class="ion-text-center">
+      <ion-button (click)="closeDetail()">Ok</ion-button>  
+    </ion-col>
+  </ion-row> 
+
+</ion-content>

@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="ion-margin">
+    <ion-item>
+      <ion-label>Nombre:</ion-label>
+      <ion-input [clearInput]="true" [(ngModel)]="first"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Apellidos:</ion-label>
+      <ion-input [clearInput]="true" [(ngModel)]="last"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Fecha Registro:</ion-label>
+      <ion-input [clearInput]="true" [(ngModel)]="date"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Usuario:</ion-label>
+      <ion-input [clearInput]="true" [(ngModel)]="user"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Contraseña:</ion-label>
+      <ion-input [clearInput]="true" type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-button class="ion-margin-top" (click)="register()">Registrar</ion-button>
+      </ion-col> 
+    </ion-row>  
+    
+
+    
+    
+    <!-- <ion-datetime-button datetime="datetime" [(ngModel)]="date"></ion-datetime-button>   -->
+   
+  </ion-list>
+</ion-content>

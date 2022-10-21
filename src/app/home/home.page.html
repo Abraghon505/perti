@@ -1,20 +1,28 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Peliculas</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-searchbar
+  inputmode="text"
+  (ionChange)="onSearchChange($event)"
+  ></ion-searchbar>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item *ngFor="let movie of moviesList;" (click)="openDetail(movie.id)">
+      <ion-avatar slot="start">
+        <img [src]="movie.img" />
+      </ion-avatar>
+      <ion-label>
+        <h2>{{movie.name}}</h2>
+        <h3>{{movie.rat}}</h3>
+        <p>{{movie.lang}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>  
 </ion-content>
